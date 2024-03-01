@@ -2,8 +2,12 @@ name: CI
 
 
 on:
-  push:
   workflow_dispatch:
+    inputs:
+      environment:
+        type: environment
+        required: true
+    
 
  
 jobs:
