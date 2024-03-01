@@ -11,6 +11,7 @@ on:
  
 jobs:
   build:
+    environment: "${{ inputs.environment }}"
     runs-on: ubuntu-latest
 
    
